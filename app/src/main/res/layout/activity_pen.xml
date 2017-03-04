@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_pen"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-
-    >
+    android:layout_height="match_parent">
 
     <ImageButton
         android:id="@+id/open_pen"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/pen_end"
+        android:background="#FFA8C2EF"
         android:onClick="closePen"
-        />
+        android:scaleType="fitCenter"
+        android:src="@drawable/pen_end" />
+
     <ImageButton
         android:id="@+id/closed_pen"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/pen_start"
+        android:background="#FFA8C2EF"
         android:onClick="openPen"
-        />
-
-
+        android:scaleType="fitCenter"
+        android:src="@drawable/pen_start" />
 </RelativeLayout>

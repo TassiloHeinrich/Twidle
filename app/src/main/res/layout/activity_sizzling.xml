@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_sizzling"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C3E5F7"
-    >
+    android:background="#C3E5F7">
 
     <ImageButton
         android:id="@+id/sizzling_end"
-        android:src="@drawable/sizzling_end"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="centerInside"
         android:background="#C3E5F7"
         android:onClick="onClickSizzilingOFF"
-        />
+        android:scaleType="centerInside"
+        android:src="@drawable/sizzling_end" />
 
     <ImageButton
         android:id="@+id/sizzling_start"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/sizzling_start"
-        android:scaleType="centerInside"
         android:background="#C3E5F7"
         android:onClick="onClickSizzilingON"
-        />
+        android:scaleType="centerInside"
+        android:src="@drawable/sizzling_start" />
 </RelativeLayout>

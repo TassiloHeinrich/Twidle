@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/front_page"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/front_page"
-    android:background="#ffff"
-
-    >
+    android:background="#ffff">
 
     <View
+        android:id="@+id/view"
         android:layout_width="250dp"
         android:layout_height="4dp"
         android:layout_below="@+id/logo"
         android:layout_centerHorizontal="true"
-        android:background="@android:color/black"
-        android:id="@+id/view" />
+        android:background="@android:color/black" />
 
 
     <ImageView
@@ -23,33 +20,31 @@
         android:layout_height="100dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/logo"
-        />
+        android:src="@drawable/logo" />
 
     <ImageButton
         android:id="@+id/fire_place"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:layout_centerHorizontal="true"
-        android:background="#ffff"
-        android:scaleType="fitCenter"
-        android:src="@drawable/fire_place"
-        android:onClick="openFirePlace"
-        android:layout_margin="50dp"
         android:layout_below="@+id/view"
-        />
+        android:layout_centerHorizontal="true"
+        android:layout_margin="50dp"
+        android:background="#ffff"
+        android:onClick="openFirePlace"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_fire_place" />
 
 
     <ImageButton
         android:id="@+id/lock"
         android:layout_width="75dp"
         android:layout_height="75dp"
+        android:layout_below="@+id/fire_place"
         android:layout_centerHorizontal="true"
         android:background="#ffff"
-        android:scaleType="fitCenter"
-        android:src="@drawable/lock"
         android:onClick="openLock"
-        android:layout_below="@+id/fire_place"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_lock"
 
         />
 
@@ -57,28 +52,26 @@
         android:id="@+id/pen"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:background="#ffff"
-        android:scaleType="fitCenter"
-        android:src="@drawable/pen"
-        android:onClick="openPen"
         android:layout_below="@+id/sizzling"
         android:layout_marginTop="50dp"
         android:layout_toRightOf="@+id/velcro"
-        />
+        android:background="#ffff"
+        android:onClick="openPen"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_pen" />
 
     <ImageButton
         android:id="@+id/sizzling"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:background="#ffff"
-        android:scaleType="fitCenter"
-        android:src="@drawable/sizzling_start"
-        android:onClick="openSizzling"
         android:layout_below="@+id/bubble_wrap"
+        android:layout_marginLeft="50dp"
         android:layout_marginTop="50dp"
         android:layout_toRightOf="@+id/lock"
-        android:layout_marginLeft="50dp"
-        />
+        android:background="#ffff"
+        android:onClick="openSizzling"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_sizzling" />
 
     <ImageButton
         android:id="@+id/velcro"
@@ -86,11 +79,11 @@
         android:layout_height="75dp"
         android:layout_below="@+id/lock"
         android:layout_centerHorizontal="true"
-        android:background="#ffff"
-        android:scaleType="fitCenter"
-        android:src="@drawable/velcro"
-        android:onClick="openVelcro"
         android:layout_margin="50dp"
+        android:background="#ffff"
+        android:onClick="openVelcro"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_velcro"
 
         />
 
@@ -98,54 +91,48 @@
         android:id="@+id/zipper"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:background="#ffff"
-        android:scaleType="fitCenter"
-        android:src="@drawable/zipper"
-        android:onClick="openZipper"
         android:layout_below="@+id/light_switch"
         android:layout_marginTop="50dp"
         android:layout_toLeftOf="@+id/velcro"
-        />
+        android:background="#ffff"
+        android:onClick="openZipper"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_zipper" />
 
     <ImageButton
         android:id="@+id/light_switch"
         android:layout_width="75dp"
-        android:src="@drawable/light_switch"
         android:layout_height="75dp"
-        android:background="#ffff"
-        android:scaleType="fitCenter"
-        android:onClick="openLightSwitch"
         android:layout_below="@+id/Lighter"
-        android:layout_toLeftOf="@+id/lock"
-        android:layout_marginTop="50dp"
         android:layout_marginRight="50dp"
-        />
+        android:layout_marginTop="50dp"
+        android:layout_toLeftOf="@+id/lock"
+        android:background="#ffff"
+        android:onClick="openLightSwitch"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_light_switch" />
 
     <ImageButton
         android:id="@+id/bubble_wrap"
         android:layout_width="75dp"
         android:layout_height="75dp"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/fire_place"
         android:background="#ffff"
         android:onClick="openBubbleWrap"
         android:scaleType="fitCenter"
-        android:src="@drawable/bubble_wrap"
-        android:layout_marginTop="50dp"
-        android:layout_below="@+id/view"
-       android:layout_toRightOf="@+id/fire_place"
-        />
+        android:src="@drawable/icon_bubble_wrap" />
 
     <ImageButton
         android:id="@+id/Lighter"
-        android:src="@drawable/lighter"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:scaleType="fitCenter"
-        android:background="#ffff"
-        android:onClick="openLighter"
-        android:layout_toLeftOf="@+id/fire_place"
         android:layout_below="@+id/view"
         android:layout_marginTop="50dp"
-
-        />
-
+        android:layout_toLeftOf="@+id/fire_place"
+        android:background="#ffff"
+        android:onClick="openLighter"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_lighter" />
 </RelativeLayout>

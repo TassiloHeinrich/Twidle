@@ -1,30 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_velcro"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F4BD95"
-
-    >
+    android:background="#F4BD95">
 
     <ImageButton
         android:id="@+id/velcroOPEN"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/velcro_end"
-        android:scaleType="centerInside"
-        android:onClick="onClickVelcroOPEN"
         android:background="#F4BD95"
-        />
+        android:onClick="onClickVelcroOPEN"
+        android:scaleType="fitCenter"
+        android:src="@drawable/velcro_end" />
 
     <ImageButton
         android:id="@+id/velcroCLOSE"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/velcro"
-        android:scaleType="centerInside"
-        android:onClick="onClickVelcroCLOSE"
         android:background="#F4BD95"
-        />
+        android:onClick="onClickVelcroCLOSE"
+        android:scaleType="fitCenter"
+        android:src="@drawable/velcro_start" />
 </RelativeLayout>

@@ -1,33 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_light_switch"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
->
+    android:layout_height="match_parent">
 
     <ImageButton
         android:id="@+id/light_switch_on"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/light_switch_end"
-        android:scaleType="fitCenter"
-        android:onClick="switchOff"
         android:background="#353535"
-        />
+        android:onClick="switchOff"
+        android:scaleType="centerCrop"
+        android:src="@drawable/light_switch_end" />
 
     <ImageButton
         android:id="@+id/light_switch_off"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/light_switch_start"
-        android:scaleType="fitCenter"
-        android:onClick="switchOn"
         android:background="#353535"
-        />
-
-
-
-
-
+        android:onClick="switchOn"
+        android:scaleType="centerCrop"
+        android:src="@drawable/light_switch_start" />
 </RelativeLayout>
