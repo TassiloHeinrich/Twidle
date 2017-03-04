@@ -2,8 +2,8 @@ package com.safariagaming.twidle;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
 
@@ -19,8 +19,7 @@ public class Sizzling extends AppCompatActivity {
         setContentView(R.layout.activity_sizzling);
     }
 
-    public void onClickSizzilingON(View view)
-    {
+    public void onClickSizzilingON(View view) {
         egg_sizzling_sound = MediaPlayer.create(this, R.raw.egg_sizzling_sound);
         ImageButton on = (ImageButton) findViewById(R.id.sizzling_start);
         on.setVisibility(View.INVISIBLE);
@@ -28,8 +27,7 @@ public class Sizzling extends AppCompatActivity {
         isON = true;
     }
 
-    public void onClickSizzilingOFF(View view)
-    {
+    public void onClickSizzilingOFF(View view) {
         ImageButton on = (ImageButton) findViewById(R.id.sizzling_start);
         on.setVisibility(View.VISIBLE);
         egg_sizzling_sound.pause();
@@ -42,16 +40,16 @@ public class Sizzling extends AppCompatActivity {
     }
 
     @Override
-    public void onBackPressed()
-    {
-        if (isON == true)
-        {
-            egg_sizzling_sound.stop();
-            openMainActivity();
-        }
-        else
-        {
-            openMainActivity();
-        }
+    public void onBackPressed() {
+        super.onBackPressed();
+//        if (isON == true)
+//        {
+//            egg_sizzling_sound.stop();
+//            openMainActivity();
+//        }
+//        else
+//        {
+//            openMainActivity();
+//        }
     }
 }
