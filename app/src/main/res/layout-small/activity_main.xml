@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/front_page"
+    android:background="#ffff"
+
+    >
+
+    <View
+        android:layout_width="187dp"
+        android:layout_height="3dp"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/black"
+        android:id="@+id/view" />
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        />
+
+    <ImageButton
+        android:id="@+id/fire_place"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_centerHorizontal="true"
+        android:background="#ffff"
+        android:scaleType="fitCenter"
+        android:src="@drawable/fire_place"
+        android:onClick="openFirePlace"
+        android:layout_margin="50dp"
+        android:layout_below="@+id/view"
+        />
+
+
+    <ImageButton
+        android:id="@+id/lock"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_centerHorizontal="true"
+        android:background="#ffff"
+        android:scaleType="fitCenter"
+        android:src="@drawable/lock"
+        android:onClick="openLock"
+
+        android:layout_below="@+id/fire_place"
+
+        />
+
+    <ImageButton
+        android:id="@+id/pen"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="#ffff"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pen"
+        android:onClick="openPen"
+        android:layout_below="@+id/sizzling"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/velcro"
+        />
+
+    <ImageButton
+        android:id="@+id/sizzling"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="#ffff"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sizzling_start"
+        android:onClick="openSizzling"
+        android:layout_below="@+id/bubble_wrap"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/lock"
+        android:layout_marginLeft="50dp"
+        />
+
+    <ImageButton
+        android:id="@+id/velcro"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/lock"
+        android:layout_centerHorizontal="true"
+        android:background="#ffff"
+        android:scaleType="fitCenter"
+        android:src="@drawable/velcro"
+        android:onClick="openVelcro"
+        android:layout_margin="50dp"
+
+        />
+
+    <ImageButton
+        android:id="@+id/zipper"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="#ffff"
+        android:scaleType="fitCenter"
+        android:src="@drawable/zipper"
+        android:onClick="openZipper"
+        android:layout_below="@+id/light_switch"
+        android:layout_marginTop="50dp"
+        android:layout_toLeftOf="@+id/velcro"
+        />
+
+    <ImageButton
+        android:id="@+id/light_switch"
+        android:layout_width="56dp"
+        android:src="@drawable/light_switch"
+        android:layout_height="56dp"
+        android:background="#ffff"
+        android:scaleType="fitCenter"
+        android:onClick="openLightSwitch"
+        android:layout_below="@+id/Lighter"
+        android:layout_toLeftOf="@+id/lock"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="50dp"
+        />
+
+    <ImageButton
+        android:id="@+id/bubble_wrap"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="#ffff"
+        android:onClick="openBubbleWrap"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bubble_wrap"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/view"
+       android:layout_toRightOf="@+id/fire_place"
+        />
+
+    <ImageButton
+        android:id="@+id/Lighter"
+        android:src="@drawable/lighter"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:scaleType="fitCenter"
+        android:background="#ffff"
+        android:onClick="openLighter"
+        android:layout_toLeftOf="@+id/fire_place"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="50dp"
+
+        />
+
+</RelativeLayout>
